@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #f2f2f2;
+  font-family: 'Unica One', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #ff003c;
+  text-shadow: 0 0 10px #ff003c;
+}
+
+.tagline, .footer {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #999;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+#countdown div {
+  text-align: center;
+}
+
+.drop-date {
+  margin-top: 40px;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #fae100;
+}
+
+/* Glitch Effect */
+.glitch {
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 2px red, -2px -2px blue; }
+  60% { text-shadow: -2px -2px red, 2px 2px blue; }
+  80% { text-shadow: 2px -2px red, -2px 2px blue; }
+  100% { text-shadow: 0 0 red, 0 0 blue; }
+}
